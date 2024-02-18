@@ -8,12 +8,12 @@ const Task = require("../models/Task.js");
 router.post("/create", async(req, res) => {
     try {
         const task = await Task.create({...req.body, completed: false });
-        res.status(201).send({ message: "Task successfully created", task });
+        res.status(201).send({ message: "Task successfully readed", task });
     } catch (error) {
         console.error(error);
         res
             .status(500)
-            .send({ message: "There was a problem trying to create a task" });
+            .send({ message: "There was a problem trying to read a task" });
     }
 });
 

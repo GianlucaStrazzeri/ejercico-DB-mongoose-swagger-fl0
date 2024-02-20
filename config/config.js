@@ -1,6 +1,6 @@
 // Código de la conexión a la base de datos.
 const mongoose = require('mongoose');
-require('dotenv').config();
+require('dotenv').config(); //Que me expliquen esta linea de codigo por si quiero hacerlo monolito
 
 const dbConnection = async() => {
     try {
@@ -13,5 +13,5 @@ const dbConnection = async() => {
 };
 
 module.exports = {
-    dbConnection,mongoose
+    dbConnection, 
 };
